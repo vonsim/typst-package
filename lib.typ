@@ -1,12 +1,5 @@
-#let init-vonsim(body) = {
-  set raw(syntaxes: "vonsim.sublime-syntax")
-  body
-}
-
-#let init-vonsim-with-theme(body) = {
-  set raw(syntaxes: "vonsim.sublime-syntax", theme: "vonsim.tmTheme")
-  body
-}
+#let vonsim-syntax = read("vonsim.sublime-syntax", encoding: none)
+#let vonsim-theme = read("vonsim.tmTheme", encoding: none)
 
 #let background = rgb(41, 37, 36)
 #let foreground = rgb(255, 255, 255)

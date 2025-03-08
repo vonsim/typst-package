@@ -5,10 +5,10 @@ This package adds the ability to syntax highlighting VonSim source code in Typst
 To add global support for VonSim, just add these lines and use a raw block with `vonsim` as its language.
 
 ````typst
-#import "@preview/vonsim:0.1.0": init-vonsim
+#import "@preview/vonsim:0.1.0": vonsim-syntax
 
 // Adds global support for VonSim
-#show: init-vonsim
+#set raw(syntaxes: vonsim-syntax)
 
 // Highlight VonSim code
 ```vonsim
@@ -41,4 +41,12 @@ finish: hlt
 ```
 ````
 
-Alternatively, use `init-vonsim-full` to also use the VonSim theme.
+### VonSim theme
+
+This package also includes a theme for VonSim. To use it, add the following lines to your Typst document:
+
+```typst
+#import "@preview/vonsim:0.1.0": vonsim-theme
+
+#set raw(theme: vonsim-theme)
+```
