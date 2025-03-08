@@ -41,6 +41,14 @@ finish: hlt
 ```
 ````
 
+You can also add the `mips` language to a raw block to highlight WinMIPS64 assembly code.
+
+```typst
+#import "@preview/vonsim:0.1.0": vonsim-syntax, mips-syntax
+
+#set raw(syntaxes: (vonsim-syntax, mips-syntax))
+```
+
 ### VonSim theme
 
 This package also includes a theme for VonSim. To use it, add the following lines to your Typst document:
