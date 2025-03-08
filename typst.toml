@@ -1,6 +1,6 @@
 [package]
 name = "vonsim"
-version = "0.1.0"
+version = "0.2.0"
 compiler = "0.13.0"
 repository = "https://github.com/vonsim/typst-package"
 entrypoint = "lib.typ"
